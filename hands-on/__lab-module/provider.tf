@@ -5,20 +5,17 @@
 
 #######################################################################################################
 
-terraform {
-
-  backend "s3" {
-    role_arn = ""
-    bucket  = "terraform-backend-<aws-account-id>"
-    region  = "eu-west-1"
-    key     = "TERRAFORM/lucas-omena/ec2.tfstate"
+// PROVIDER
+provider "aws" {
+  region = var.region
+  assume_role {
+    role_arn = var.role_arn
   }
 
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = ">= 4.50.0"
+  default_tags {
+    tags = {
+      "Project"   = "WORKSHOP TERRAFORM"
+      "ManagedBy" = "<EID>"
     }
   }
-  required_version = ">= 0.15"
 }

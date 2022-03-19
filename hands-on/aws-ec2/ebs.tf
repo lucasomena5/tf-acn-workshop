@@ -13,7 +13,6 @@ resource "aws_ebs_volume" "ebs_windows" {
   size              = var.ebs_block_device[count.index].volume_size
   type              = var.ebs_block_device[count.index].volume_type
   encrypted         = true
-  #kms_key_id        = var.kms_key_arn
   lifecycle {
     ignore_changes = [
       availability_zone
@@ -25,8 +24,7 @@ resource "aws_ebs_volume" "ebs_windows" {
   }
 
   depends_on = [
-    data.aws_instance.instance_windows,
-    #data.aws_kms_key.kms_key
+    data.aws_instance.instance_windows
   ]
 }
 
@@ -38,7 +36,6 @@ resource "aws_ebs_volume" "ebs_linux" {
   size              = var.ebs_block_device[count.index].volume_size
   type              = var.ebs_block_device[count.index].volume_type
   encrypted         = true
-  #kms_key_id        = var.kms_key_arn
   lifecycle {
     ignore_changes = [
       availability_zone
@@ -50,8 +47,7 @@ resource "aws_ebs_volume" "ebs_linux" {
   }
 
   depends_on = [
-    data.aws_instance.instance_linux,
-    #data.aws_kms_key.kms_key
+    data.aws_instance.instance_linux
   ]
 }
 

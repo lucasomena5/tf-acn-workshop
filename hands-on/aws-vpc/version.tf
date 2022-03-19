@@ -11,7 +11,7 @@ terraform {
     role_arn = ""
     bucket  = "terraform-backend-<aws-account-id>"
     region  = "eu-west-1"
-    key     = "TERRAFORM/lucas-omena/ec2.tfstate"
+    key     = "TERRAFORM/lucas-omena/vpc.tfstate"
   }
 
   required_providers {

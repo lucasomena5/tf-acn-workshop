@@ -9,9 +9,9 @@ terraform {
 
   backend "s3" {
     role_arn = ""
-    bucket  = "terraform-backend-<aws-account-id>"
+    bucket  = "terraform-backend-002125172048"
     region  = "eu-west-1"
-    key     = "TERRAFORM/lucas-omena/ec2.tfstate"
+    key     = "TERRAFORM/lucas-omena/<ec2-hostname>.tfstate"
   }
 
   required_providers {
