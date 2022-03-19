@@ -1,0 +1,24 @@
+############################################# LUCAS OMENA #############################################
+
+# HANDS-ON LABS
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
+#######################################################################################################
+
+terraform {
+
+  backend "s3" {
+    role_arn = ""
+    bucket  = "terraform-backend-002125172048"
+    region  = "eu-west-1"
+    key     = "TERRAFORM/lucas-omena/<ec2-hostname>.tfstate"
+  }
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 4.50.0"
+    }
+  }
+  required_version = ">= 0.15"
+}

@@ -5,23 +5,6 @@
 
 #######################################################################################################
 
-// LOCAL VARIABLES
-locals {
-  environments = {
-    "dev"     = "DEV"
-    "pre"     = "PRE"
-    "pro"     = "PRD"
-    "network" = "NETWORK"
-    "shared"  = "SHAREDSERVICES"
-  }
-
-  range_public_subnet           = range(0, sum([0, var.qtd_public_subnet]))
-  range_private_subnet          = range(50, sum([50, var.qtd_private_subnet]))
-  
-  environment = local.environments[var.environment]
-}
-
-
 // VPC
 resource "aws_vpc" "vpc" {
   cidr_block           = var.vpc_cidr_block
