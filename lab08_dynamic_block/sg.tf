@@ -1,7 +1,7 @@
 ############################################# LUCAS OMENA #############################################
 
-# Terraform Providers são plugins utilizados para interagir e se conectar com sistemas remotos
-# https://registry.terraform.io/providers/hashicorp/aws/latest
+# Usado para construção de nested blocks repetidamente 
+# https://www.terraform.io/language/expressions/dynamic-blocks
 
 #######################################################################################################
 
