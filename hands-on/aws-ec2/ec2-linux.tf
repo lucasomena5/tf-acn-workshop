@@ -32,6 +32,11 @@ resource "aws_instance" "ec2_linux" {
 
   //user_data = var.user_data
   user_data = file("${path.module}/install.sh")
+
+  provisioner "file" {
+    source      = "index-green.html"
+    destination = "/var/www/html/index.html"
+  }
   tags = {
     "Name"             = "${local.naming}",
     "Environment"      = "${local.environment}",

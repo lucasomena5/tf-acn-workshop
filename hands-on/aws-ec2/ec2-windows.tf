@@ -31,6 +31,11 @@ resource "aws_instance" "ec2_windows" {
 
   //user_data = var.user_data
   user_data = file("${path.module}/install.ps1")
+
+  provisioner "file" {
+    source      = "index-green.html"
+    destination = "/var/www/html/index.html"
+  }
   tags = {
     "Name"             = "${local.ec2_name}",
     "Environment"      = "${local.environment}",
