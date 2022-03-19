@@ -29,7 +29,8 @@ resource "aws_instance" "ec2_windows" {
     encrypted             = true
   }
 
-  user_data = var.user_data
+  //user_data = var.user_data
+  user_data = file("${path.module}/install.ps1")
   tags = {
     "Name"             = "${local.ec2_name}",
     "Environment"      = "${local.environment}",
