@@ -13,8 +13,7 @@ root_volume_size = 1
 ebs_block_device = [{
   device_name = "/dev/sdf"
   volume_type = "gp3"
-  volume_size = 10
-  // IOPS MAX = 50 IOPS x GB
+  volume_size = 10 // IOPS MAX = 50 IOPS x GB
   iops = 500
 }]
 kms_key_arn = ""
