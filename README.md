@@ -1,1 +1,2 @@
-# tf-workshop-lucas.omena
+# tf-acn-workshop
+lucas.omena@accenture.com
