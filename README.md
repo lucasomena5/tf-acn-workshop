@@ -1,6 +1,12 @@
 
-<p style="text-align:center;"><img alt="Accenture" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" width="600px"></p>
+<img alt="Accenture" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" width="600px">
 
+Ao time de IC, gostaria de agradecer a participação de todos!
+
+<h1>E LEMBREM-SE</h1>
+=========
+
+<img alt="Accenture" src="https://vandal-us.s3.amazonaws.com/spree/products/618eb65929592500ae6dd335/original/uploads_2F1636742673550-mwccffhq3r-bfcefaf86dea098ddeb99e602701f3f0_2FFoguete.jpg" width="600px">
 
 Terraform
 =========
