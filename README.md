@@ -1,5 +1,5 @@
 
-<img alt="Accenture" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" width="600px">
+<p><img alt="Accenture" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" width="600px"></p>
 
 
 Terraform
