@@ -1,7 +1,7 @@
 
 <img alt="Accenture" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" width="600px">
 
-Ao time de IC, gostaria de agradecer a participação de todos!
+Gostaria de agradecer a participação de todos!
 
 <h1>E LEMBREM-SE</h1>
 
