@@ -9,7 +9,7 @@
 resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.vpc.id
   tags = {
-    "Name"        = join("-", [var.prefix, join("", ["igw", format("%02d", var.sequence), var.environment])]),
+    "Name"        = join("-", [var.prefix, join("", ["igw", format("%02d", var.number_of_sequence), var.environment])]),
     "Environment" = "${local.environment}"
   }
 

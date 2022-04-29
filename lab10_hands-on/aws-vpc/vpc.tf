@@ -12,7 +12,7 @@ resource "aws_vpc" "vpc" {
   enable_dns_support   = var.enable_dns_support
 
   tags = {
-    "Name"        = join("-", [var.prefix, join("", ["vpc", format("%02d", var.sequence), var.environment])])
+    "Name"        = join("-", [var.prefix, join("", ["vpc", format("%02d", var.number_of_sequence), var.environment])])
     "Environment" = "${local.environment}"
   }
 

@@ -47,4 +47,4 @@ ec2_os               = "l"
 // TAGGING
 prefix      = "tf"
 environment = "dev"
-sequence    = 1
+number_of_sequence    = 1

@@ -30,8 +30,8 @@ variable "environment" {
   }
 }
 
-variable "sequence" {
-  description = "(Required) Sequence number of the resource. If you have more than one resource, send the sequence accordingly so that names dont clash."
+variable "number_of_sequence" {
+  description = "(Required) number_of_sequence number of the resource. If you have more than one resource, send the number_of_sequence accordingly so that names dont clash."
   type        = number
 }
 

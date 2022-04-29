@@ -20,7 +20,7 @@ resource "aws_nat_gateway" "nat_gateway" {
   subnet_id         = aws_subnet.public_subnet[0].id
 
   tags = {
-    "Name"        = join("-", [var.prefix, join("", ["ngw", format("%02d", var.sequence), var.environment])]),
+    "Name"        = join("-", [var.prefix, join("", ["ngw", format("%02d", var.number_of_sequence), var.environment])]),
     "Environment" = "${local.environment}"
   }
 

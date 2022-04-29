@@ -10,7 +10,7 @@ resource "aws_route_table" "rt_public" {
   vpc_id = aws_vpc.vpc.id
 
   tags = {
-    "Name"        = join("-", [var.prefix, join("", ["rt", "public", format("%02d", var.sequence), var.environment])]),
+    "Name"        = join("-", [var.prefix, join("", ["rt", "public", format("%02d", var.number_of_sequence), var.environment])]),
     "Environment" = "${local.environment}"
   }
 }
@@ -19,7 +19,7 @@ resource "aws_route_table" "rt_private" {
   vpc_id = aws_vpc.vpc.id
 
   tags = {
-    "Name"        = join("-", [var.prefix, join("", ["rt", "private", format("%02d", var.sequence), var.environment])]),
+    "Name"        = join("-", [var.prefix, join("", ["rt", "private", format("%02d", var.number_of_sequence), var.environment])]),
     "Environment" = "${local.environment}"
   }
 }

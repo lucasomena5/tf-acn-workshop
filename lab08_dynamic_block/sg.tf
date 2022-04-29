@@ -25,7 +25,7 @@ resource "aws_security_group" "sg" {
     }
   }
   tags = {
-    "Name"        = join("-", [var.prefix, join("_", [lower(var.purpose), "security", "group", var.environment, format("%02d", var.sequence)])]),
+    "Name"        = join("-", [var.prefix, join("_", [lower(var.purpose), "security", "group", var.environment, format("%02d", var.number_of_sequence)])]),
     "Environment" = "${local.environment}",
     "Purpose"     = "${var.purpose}"
   }

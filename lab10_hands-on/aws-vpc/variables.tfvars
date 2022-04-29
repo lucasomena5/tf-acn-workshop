@@ -8,7 +8,7 @@ receiver_principal = ""
 // TAGGING
 prefix      = "tf"
 environment = "network"
-sequence    = 1
+number_of_sequence    = 1
 
 // NETWORKING
 vpc_cidr_block       = "10.1.0.0/20"

@@ -7,7 +7,7 @@
 
 // LOCAL VARIABLES
 locals {
-  ec2_name = join("-", [var.prefix, join("", [var.environment, format("%01d", var.sequence)])])
+  ec2_name = join("-", [var.prefix, join("", [var.environment, format("%01d", var.number_of_sequence)])])
   environments = {
     "dev"     = "DEV"
     "pre"     = "PRE"
